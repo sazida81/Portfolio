@@ -4,6 +4,7 @@ import image2 from '../asssets/image2.jpeg';
 const About = () => {
   return (
     <div className='bg-black text-white py-20' id='about'>
+      
         <div className='container mx-auto px-8 md:px-16 lg:px-24'>
             
             <h2 className='text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-400'>About me</h2>

@@ -5,11 +5,11 @@ import { FaGithub } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
-    <nav className='bg-black text-white px-8 md:px-16 lg:px-24'>
+    <nav className='bg-black text-white px-8 md:px-16 lg:px-24 sticky top-0 z-10'>
 
         <div className='container py-2 flex justify-center md:justify-between items-center'>
             <div className='text-2xl font-bold hidden md:inline text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-400 tracking-widest'>SAZIDA</div>
-            <div className='space-x-6'>
+            <div className='pl-5 space-x-6'>
                 <a href="#home" className='hover:text-red-400'>Home</a>
                 <a href="#about" className='hover:text-yellow-400'>About</a>
                 <a href="#services" className='hover:text-red-400'>Services</a>

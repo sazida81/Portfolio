@@ -6,10 +6,11 @@ import BDMS from '../asssets/BDMS.jpeg';
 const projects = [
     {
         id : 1,
-        name : "Blood Donation Management System",
+        name : "Blood Donation MS",
         technology : "Html & Css",
         image : BDMS,
         github : "https://github.com/sazida81/BDMS-project",
+        preview : BDMS,
     },
     {
         id : 2,
@@ -17,6 +18,7 @@ const projects = [
         technology : "React js",
         image : ToDo,
         github : "https://github.com/sazida81/Todo-App",
+        preview : ToDo,
     },   
     {
         id : 3,
@@ -24,6 +26,7 @@ const projects = [
         technology : "PHP & Mysql",
         image : AMS,
         github : "https://github.com/sazida81/Alumni-Management-System",
+        preview : AMS,
     },
 ]
 
@@ -39,6 +42,7 @@ const Project = () => {
                         <h3 className='text-2xl font-bold mb-2'>{project.name}</h3>
                         <p className='text-gray-400 mb-4'>{project.technology}</p>
                         <a href={project.github} className='inline-block bg-gradient-to-r from-red-400 to-yellow-500 text-white px-4 py-2 rounded-full' target="blank" rel="noopener noreferrer">GitHub</a>
+                        <a href={project.preview} className='inline-block bg-gradient-to-r from-red-400 to-yellow-500 text-white px-4 py-2 ml-5 rounded-full' target="blank" rel="noopener noreferrer">Preview</a>
                     </div>
                 ))}
 
