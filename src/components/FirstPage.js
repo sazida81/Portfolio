@@ -1,10 +1,28 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import { useNavigate } from 'react-router-dom';
 import './Style.css';
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
+import { MdOutlineHistoryToggleOff } from "react-icons/md";
 import image1 from '../asssets/image1.jpeg';
 
 const FirstPage = () => {
+
+  const [theme,setTheme] = useState("Light");
+
+  useEffect(()=>{
+
+    if(theme === "dark"){
+      document.documentElement.classList.add("dark");
+    }
+    else{
+      document.documentElement.classList.remove("dark");
+    }
+
+  },[theme]);
+
+  const handleThemeSwitch = ()=>{
+    setTheme(theme === "dark" ? "Light" : "dark");
+  }
 
   const nevigate = useNavigate();
 
@@ -23,7 +41,10 @@ const FirstPage = () => {
 
   return (
     <div>
-        <div className='bg-black text-white text-center py-16 h-screen content-center'>
+      <div className='bg-black dark:bg-white flex flex-row-reverse'>
+      <MdOutlineHistoryToggleOff className='text-red-600 text-4xl font-bold mr-8 mt-5' onClick={handleThemeSwitch}/>
+      </div>
+        <div className='bg-black dark:bg-white text-white text-center py-16 h-screen content-center'>
       <img src={image1} className='mx-auto mb-8 w-48 h-48 rounded-full object-cover transform transition-transform duration-300 hover:scale-105
        border-2 border-yellow-200 
        shadow-[0_0_2px_#fbbf24,inset_0_0_2px_#b45309,0_0_10px_#fde047,0_0_25px_#713f12,0_0_70px_#431407] cursor-pointer' onClick={handleClick}/>

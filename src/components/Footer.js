@@ -6,14 +6,14 @@ import { FaGithub } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className='bg-black text-white py-8' id='footer'>
+    <footer className='bg-black dark:bg-white text-black text-white py-8' id='footer'>
         <div className='container mx-auto px-8 md:px-16 lg:px-24'>
 
             <div className='md:flex-row md:space-x-12 items-center mb-4'>
                 
                 <div className='flex-1 mb-4 md:mb-0'>
                 <div className='text-2xl font-bold hidden md:inline text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-400 tracking-widest'>SAZIDA</div>
-                <p className='text-gray-400'>Front-end Developer</p>
+                <p className='text-gray-400 dark:text-black'>Front-end Developer</p>
                 </div>
               
               
@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
 
                 <div className='flex flex-col md:flex-row justify-between items-center'>
-                <p className='text-yellow-400'>&copy;Sazida. All right reserved. {new Date().getFullYear()}</p>
+                <p className='text-yellow-400 dark:text-red-700'>&copy;Sazida. All right reserved. {new Date().getFullYear()}</p>
 
                     <div className='flex space-x-4 my-4 md:my-0'>
                     <a href='https://www.facebook.com/adnanianchowdhury'><FaFacebook className='text-2xl text-yellow-400 transform transition-transform duration-300 hover:scale-105'/></a>
