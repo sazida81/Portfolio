@@ -15,14 +15,14 @@ const Hero = () => {
   })
 
   return (
-    <div className='bg-black dark:bg-white text-white text-center py-16'>
+<div className='bg-[#020617] dark:bg-[#fefce8] text-white text-center py-16'>
       <img src={image1} className='mx-auto mb-8 w-48 h-48 rounded-full object-cover transform transition-transform duration-300 hover:scale-105' />
-      <h1 className='text-4xl font-bold'>
+      <h1 className='text-4xl font-bold dark:text-[#1e1b4b]'>
         I'm{" "}
         <span>Sazida</span><br />
         <span className='text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-400'>{typeEffect}</span>
       </h1>
-      <p className='mt-4 text-lg text-gray-300 dark:text-slate-950 font-semibold'>
+      <p className='mt-4 text-lg text-gray-300 dark:text-[#0f172a] font-semibold'>
       Crafting seamless user experiences by transforming designs into functional code.
       </p>
       <div className='mt-8 space-x-4'>
